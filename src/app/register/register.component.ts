@@ -31,7 +31,7 @@ export class RegisterComponent implements OnInit {
 
   async registerHere() {
     const data = this.fbFormGroup.value;
-    const url = 'http://localhost:3000/adduser';
+    const url = 'http://localhost:3600/adduser';
 
     await this.http.post(url, data).toPromise();
 
